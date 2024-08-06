@@ -1,14 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Layout from './components/layout';
-
+import "./App.css";
+import Layout from "./components/layout";
+import InfoCard from "./components/molecules/InfoCard";
 function App() {
   return (
-   <Layout>
-      <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-   </Layout>
+    <Layout>
+      <InfoCard title={"Title 1"}>
+        <h2>level</h2>
+      </InfoCard>
+    </Layout>
   );
 }
 
