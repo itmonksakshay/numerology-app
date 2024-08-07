@@ -14,6 +14,32 @@ const WrapperButton = styled('button')({
     padding : " 5px 30px"
 });
 
+const BigWrapperButton = styled('button')({
+    background: "#FB6514",
+    height: "56px",
+    borderRadius: "8px",
+    fontSize: "20px",
+    fontWeight: 600,
+    lineHeight: "24.2px",
+    textAlign: "center",
+    color: "#ffffff",
+    cursor: 'pointer',
+    padding : " 5px 30px"
+});
+
+const SmallButtonWrapper = styled('button')({
+    height: "38px",
+    borderRadius: "4px",
+    fontSize: "14px",
+    fontWeight: 500,
+    lineHeight: "16.94px",
+    textAlign: "center",
+    color: "#ffffff",
+    cursor: 'pointer',
+    background: "#FB6514",
+    padding : " 5px 10px"
+})
+
 const PrimaryButton = ({ children, ...extraProps }) => {
     return (
         <WrapperButton
@@ -21,6 +47,26 @@ const PrimaryButton = ({ children, ...extraProps }) => {
         >
             {children}
         </WrapperButton>
+    );
+};
+
+export const SmallPrimaryButton = ({ children, ...extraProps }) => {
+    return (
+        <SmallButtonWrapper
+            {...extraProps}
+        >
+            {children}
+        </SmallButtonWrapper>
+    );
+};
+
+export const BigPrimaryButton = ({ children, ...extraProps }) => {
+    return (
+        <BigWrapperButton
+            {...extraProps}
+        >
+            {children}
+        </BigWrapperButton>
     );
 };
 
