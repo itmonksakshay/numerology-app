@@ -1,17 +1,27 @@
 import React from "react";
 import backgroundImage1 from "../../assets/images/backgrounImage1.png";
+import backgroundImage2 from "../../assets/images/backgroundImage2.png";
+import backgroundImage3 from "../../assets/images/backgrounImage3.png";
 import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       <Header />
-      <div className="relative w-full">
-        <img src={backgroundImage1} className="absolute w-full z-0" />
-        <div className="px-[120px] py-[84px] absolute w-full">{children}</div>
+      <div className="absolute w-full z-0">
+        <img src={backgroundImage1} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage2} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage3} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage1} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage2} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage3} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage1} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage2} className="w-full mt-[-5px]"  />
+        <img src={backgroundImage3} className="w-full mt-[-5px]"  />
+        <Footer />
       </div>
-      <Footer/>
+      <div className="px-[120px] py-[84px] w-full">{children}</div>
     </div>
   );
 };

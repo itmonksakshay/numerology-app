@@ -4,7 +4,7 @@ import PrimaryButton from '../../atoms/Button/PrimaryButton';
 import SecondaryButton from '../../atoms/Button/SecondaryButton';
 const Header = () => {
   return (
-    <header class="h-24 bg-[#1A133E] w-full items-center justify-between flex px-[120px]">
+    <header class="h-24 bg-blueBlack w-full items-center justify-between flex px-[120px]">
       <div class='flex '>
         <img src={AppIcon} alt='icon' />
       </div>
