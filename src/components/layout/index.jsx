@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <Header />
       <div className="relative w-full">
         <img src={backgroundImage1} className="absolute w-full z-0" />
-        <div className="px-[120px] py-[84px] absolute">{children}</div>
+        <div className="px-[120px] py-[84px] absolute w-full">{children}</div>
       </div>
       <Footer/>
     </div>
