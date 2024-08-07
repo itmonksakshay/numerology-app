@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans]
       },
+      blueBlack: "#1A133E",
     }
   },
   plugins: [],
