@@ -4,21 +4,17 @@ import React, { useEffect, useRef, useState } from "react";
 /**
  * how you used the components
  */
-export default function DataChart({ boxHeight,data }) {
-
-
-  const ref = useRef();
-
+export default function DataChart({ boxHeight,data,defaultWdith}) {
 
   const svgRef = useRef();
   const containerRef = useRef();
-  const [boxWidth, setWidth] = useState(594); // Default width
+  const [boxWidth, setWidth] = useState(defaultWdith); // Default width
 
   useEffect(() => {
     // Function to update the SVG width
     const updateWidth = () => {
       const containerWidth = containerRef.current?.getBoundingClientRect().width;
-      setWidth(containerWidth || 594); // Fallback to default width if container is not available
+      setWidth(containerWidth || defaultWdith); // Fallback to default width if container is not available
     };
 
     // Initial update

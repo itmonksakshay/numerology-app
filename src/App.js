@@ -3,6 +3,8 @@ import Layout from "./components/layout";
 import InfoCard from "./components/molecules/InfoCard";
 import infoCardPattern from "./assets/images/infoCardPattern.png";
 import DetailCard from "./components/molecules/DetailCard";
+import TableCard from "./components/molecules/TableCard";
+
 import { styled } from "@mui/material";
 import PrimaryButton, {
   BigPrimaryButton,
@@ -11,6 +13,7 @@ import PrimaryButton, {
 import CardWrapper from "./components/atoms/CardWrapper";
 import DataChart from "./components/molecules/DataChart";
 import PreviewDataChart from "./components/organisms/PreviewDataChart";
+import Step3DetailCard from "./components/organisms/Step3DetailCard";
 
 const TextWrapper = styled("div")({
   "& .title": {
@@ -67,7 +70,7 @@ function App() {
           className="min-w-[656px] flex-auto"
         >
           <div className="flex justify-center w-full px-2">
-            <PreviewDataChart/>
+            <PreviewDataChart />
           </div>
         </InfoCard>
       </div>
@@ -79,6 +82,7 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard title={"1. Chu kì đỉnh cuộc đời"} divider>
+          <div></div>
           <div className="flex flex-col gap-8">
             <div className="w-[225px]">
               <BigPrimaryButton>Trưởng thành: 5</BigPrimaryButton>
@@ -103,6 +107,7 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard title={"2. Trọng số năng lượng"}>
+          <TableCard />
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               <span className="font-bold">Trọng số năng lượng </span>trái với
@@ -128,7 +133,9 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"3. Chu kỳ 9 năm cá nhân"}></DetailCard>
+        <DetailCard title={"3. Chu kỳ 9 năm cá nhân"}>
+          <Step3DetailCard />
+        </DetailCard>
       </div>
       <div className="pt-5">
         <DetailCard
