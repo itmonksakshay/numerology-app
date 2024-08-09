@@ -71,13 +71,6 @@ export default function DataChart({ boxHeight,data }) {
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    // svg.append("path")
-    //   .datum(data)
-    //   .attr("fill", "none")
-    //   .attr("stroke", "#FF7B34")
-    //   .attr("stroke-width", 2)
-    //   .attr("d", line);
-
     g.selectAll("circle")
       .data(data)
       .enter()
@@ -100,7 +93,6 @@ export default function DataChart({ boxHeight,data }) {
       .attr("font-size", "16px")
       .attr("fill", "#FFFFFF")
       .text((d) => d.value);
-    //   .attr("transform",`translate(5,-25)`)
 
     svg.append('g').attr("transform", `translate(${margin.left},-${margin.bottom})`).selectAll(".grid")
       .data(data) // Adjust the number of vertical grid lines
@@ -113,7 +105,6 @@ export default function DataChart({ boxHeight,data }) {
       .attr("y2", boxHeight)
       .attr("stroke", "rgba(255, 255, 255, 0.1)")
       .attr("stroke-width", 1);
-    // .attr("transform", `translate(${margin.left},0)`)
 
     const extendedData = [
         {date: Math.min(...data.map(d => d.date)) - 1, value: y.invert(d3.mean(data.map(d => y(d.value)))) },
@@ -148,10 +139,6 @@ export default function DataChart({ boxHeight,data }) {
     .attr("stroke", "#514D63") // Change the stroke color here
     .attr("stroke-width",1); // Optionally adjust stroke width
 
-
-    //   svg.append("g")
-    //     .attr("transform", `translate(${margin.left},${margin.top})`)
-    //     .call(d3.axisLeft(y));
   }, [data,boxWidth]);
 
   return <div className="w-full" ref={containerRef}>
