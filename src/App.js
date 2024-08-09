@@ -9,6 +9,8 @@ import PrimaryButton, {
   SmallPrimaryButton,
 } from "./components/atoms/Button/PrimaryButton";
 import CardWrapper from "./components/atoms/CardWrapper";
+import DataChart from "./components/molecules/DataChart";
+import PreviewDataChart from "./components/organisms/PreviewDataChart";
 
 const TextWrapper = styled("div")({
   "& .title": {
@@ -63,10 +65,17 @@ function App() {
         <InfoCard
           title={"Chu kỳ vận số của bạn"}
           className="min-w-[656px] flex-auto"
-        ></InfoCard>
+        >
+          <div className="flex justify-center w-full px-2">
+            <PreviewDataChart/>
+          </div>
+        </InfoCard>
       </div>
       <div className="pt-5 w-full">
-        <InfoCard title={"Tính cách nổi trội của bạn"} className="h-[226px]"></InfoCard>
+        <InfoCard
+          title={"Tính cách nổi trội của bạn"}
+          className="h-[226px]"
+        ></InfoCard>
       </div>
       <div className="pt-5">
         <DetailCard title={"1. Chu kì đỉnh cuộc đời"} divider>
@@ -248,7 +257,7 @@ function App() {
           subtitle={"1"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -270,7 +279,7 @@ function App() {
           subtitle={"5"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -292,7 +301,7 @@ function App() {
           subtitle={"4"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -311,7 +320,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"14. Chỉ số linh hồn của bạn là:"} subtitle={"6"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -330,7 +339,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"15. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -349,7 +358,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"16. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -368,7 +377,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"17. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -387,7 +396,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"18. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -406,7 +415,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"19. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -425,7 +434,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"20. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -447,7 +456,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"22. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -456,7 +465,7 @@ function App() {
               là nó khiến văn bản giống thật hơn, bình thường hơn.
             </p>
             <div className="flex flex-col gap-4">
-              <p className="text-[15px] font-normal text-white leading-2.5">
+              <p className="text-[15px] font-normal text-white leading-[24px]">
                 Mục này cho biết bạn nên đi theo hướng nào trong những năm sắp
                 tới để đạt thành công.
               </p>
@@ -472,7 +481,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"23. Biểu đồ tên và biểu đồ tổng hợp"}>
           <div className="flex flex-col gap-4">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Mục này cho biết bạn nên đi theo hướng nào trong những năm sắp tới
               để đạt thành công.
             </p>
@@ -487,7 +496,7 @@ function App() {
       <div className="pt-5">
         <DetailCard title={"24. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -509,7 +518,7 @@ function App() {
           subtitle={"46"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -531,7 +540,7 @@ function App() {
           subtitle={"46"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -553,7 +562,7 @@ function App() {
           subtitle={"46"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -575,7 +584,7 @@ function App() {
           subtitle={"46"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
@@ -597,7 +606,7 @@ function App() {
           subtitle={"46"}
         >
           <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-2.5">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
               đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
               bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
