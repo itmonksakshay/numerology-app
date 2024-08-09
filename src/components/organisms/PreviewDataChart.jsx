@@ -16,7 +16,7 @@ const PreviewDataChart = () => {
         { date: 2031, value: 7 },
       ];
   return (
-    <DataChart data={data} boxHeight={254}/>
+    <DataChart data={data} boxHeight={254} defaultWidth={564}/>
   )
 }
 
