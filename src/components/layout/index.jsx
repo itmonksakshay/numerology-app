@@ -6,22 +6,23 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
+  // window.scrollTo({top:0})
   return (
     <div className="w-full relative">
-      <Header />
       <div className="absolute w-full z-0">
-        <img src={backgroundImage1} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage2} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage3} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage1} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage2} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage3} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage1} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage2} className="w-full mt-[-5px]"  />
-        <img src={backgroundImage3} className="w-full mt-[-5px]"  />
+      <Header />
+        <img src={backgroundImage1} className="w-full mt-[-5px]" />
+        <img src={backgroundImage2} className="w-full mt-[-5px]" />
+        <img src={backgroundImage3} className="w-full mt-[-5px]" />
+        <img src={backgroundImage1} className="w-full mt-[-5px]" />
+        <img src={backgroundImage2} className="w-full mt-[-5px]" />
+        <img src={backgroundImage3} className="w-full mt-[-5px]" />
+        <img src={backgroundImage1} className="w-full mt-[-5px]" />
+        <img src={backgroundImage2} className="w-full mt-[-5px]" />
+        <img src={backgroundImage3} className="w-full mt-[-5px]" />
         <Footer />
       </div>
-      <div className="px-[120px] py-[84px] w-full">{children}</div>
+      <div className="w-full absolute z-1 px-[120px] pb-[84px] pt-[164px]" autoFocus>{children}</div>
     </div>
   );
 };
