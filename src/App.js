@@ -3,6 +3,10 @@ import Layout from "./components/layout";
 import InfoCard from "./components/molecules/InfoCard";
 import infoCardPattern from "./assets/images/infoCardPattern.png";
 import DetailCard from "./components/molecules/DetailCard";
+import TitleCard from "./components/molecules/TitleCard";
+import TableCard from "./components/molecules/TableCard";
+
+
 import { styled } from "@mui/material";
 import PrimaryButton, {
   BigPrimaryButton,
@@ -33,6 +37,18 @@ function App() {
     { title: "Ngày sinh:", subtitle: "07/08/2024" },
     { title: "Giới tính:", subtitle: "Nam" },
   ];
+
+  const titleInfo = [
+  {id:1,title:"Năm CN thứ 1",subtitle: "Năm điều chỉnh mạnh mẽ cho  1 chu kỳ mới" }, 
+  {id:2,title:"Năm CN thứ 2",subtitle:"Năm phát triển về tâm linh và  chia sẻ" },
+  {id:3,title:"Năm CN thứ 3",subtitle:"Năm phát triển trí não thông  qua học tập"},
+  {id:4,title:"Năm CN thứ 4",subtitle:"Cũng cố nội lực (đáy thứ 1  trong chu kỳ)"},
+  {id:5,title:"Năm CN thứ 5",subtitle:"Năm tự do và kết nối" },
+  {id:6,title:"Năm CN thứ 6",subtitle:"Năm sáng tạo, yêu thương"},
+  {id:7,title:"Năm CN thứ 7",subtitle:"Vượt chướng ngại vật, quay về học hành đạo ký"},
+  {id:8,title:"Năm CN thứ 8",subtitle:"Độc lập và trí tuệ" },
+  {id:9,title:"Năm CN thứ 9",subtitle:"Năm đạt đỉnh cao của chu kỳ"},
+]
 
   return (
     <Layout>
@@ -79,6 +95,9 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard title={"1. Chu kì đỉnh cuộc đời"} divider>
+          <div>
+
+          </div>
           <div className="flex flex-col gap-8">
             <div className="w-[225px]">
               <BigPrimaryButton>Trưởng thành: 5</BigPrimaryButton>
@@ -103,6 +122,7 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard title={"2. Trọng số năng lượng"}>
+          <TableCard/>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               <span className="font-bold">Trọng số năng lượng </span>trái với
@@ -128,7 +148,19 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"3. Chu kỳ 9 năm cá nhân"}></DetailCard>
+        <DetailCard
+          title={"3. Chu kỳ 9 năm cá nhân"}>
+          <div className='flex flex-wrap justify-center gap-3'>
+            {titleInfo.map((item)=>(
+            <TitleCard
+              item={item}
+            />
+          ))}
+
+          </div>
+
+        </DetailCard>
+
       </div>
       <div className="pt-5">
         <DetailCard
