@@ -37,24 +37,25 @@ const Step3DetailCard = () => {
   ];
 
   const data = [
-    { date: 2021, value: 9 },
+    { date: 2021, value: 9,markerValue:'Đ2 (số 10)' },
     { date: 2022, value: 7 },
     { date: 2023, value: 5 },
     { date: 2024, value: 3 },
-    { date: 2025, value: 1 },
-    { date: 2026, value: 4 },
-    { date: 2027, value: 2 },
-    { date: 2028, value: 5 },
-    { date: 2029, value: 7 },
+    { date: 2025, value: 0 },
+    { date: 2026, value: 2,markerValue:'Đ3 (số 5)' },
+    { date: 2027, value: 1 },
+    { date: 2028, value: 4 },
+    { date: 2029, value: 6 },
     { date: 2030, value: 9 },
-    { date: 2031, value: 7 },
+    { date: 2031, value: 6 },
   ];
+  const topAxisData = [41,42,43,44,45,46,47,48,49,50,51];
 
   return (
     <div className="flex flex-col gap-8">
         <div className="flex justify-center">
             <div className="w-[740px]">
-                <DataChart data={data} boxHeight={364} defaultWidth={740}/>
+                <DataChart data={data} boxHeight={364} defaultWidth={740} topAxisData={topAxisData}/>
             </div>
         </div>
       <div className="flex justify-center">
