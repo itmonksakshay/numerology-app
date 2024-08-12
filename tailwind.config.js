@@ -12,7 +12,18 @@ module.exports = {
       colors:{
         blueBlack: "#1A133E",
         orangePeel: "#F7A120",
-        orangeCrayola: "#FB6514"
+        orangeCrayola: "#FB6514",
+        lavenderBlush: "#F2E2E2",
+        Linen: "#F2E7DE",
+        eggShell: "#F1EEDE",
+        pastelMint: "#DBEACD",
+        aeroBlue: "#C4E1C7",
+        LightCyan: "#D2EFED",
+        aliceBlue:  "#DDE7F2",
+        languidLavender: "#FD8813",
+        languid: "#FFBB0C",
+        yellowGreen: "#82C938",
+
       },
       backgroundImage: {
         'gradient-0': 'linear-gradient(0deg, #120D2E 0%, #1A133E 100%)'
