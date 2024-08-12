@@ -8,14 +8,14 @@ const WrapperButton = styled('button')({
     fontWeight: 600,
     lineHeight: "19.36px",
     cursor: 'pointer',
-    padding : " 5px 30px",
     background:"#525785",
     color:"#FFFFFF"
 });
 const StandardButton =({ children, ...extraProps }) => {
     return (
         <WrapperButton
-            {...extraProps}
+            {...extraProps} 
+            className='flex justify-center items-center px-4'
         >
             {children}
         </WrapperButton>
