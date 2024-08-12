@@ -33,7 +33,7 @@ const PercentageCircularProgress = ({ value }) => {
          }}
 
       />
-      <div className="absolute before:!p-0 text-[24px] leading-[29.05px] r">{`${Math.round(value)}%`}</div>
+      <div className="absolute before:!p-0 text-[24px] leading-[29.05px] font-semibold">{`${Math.round(value)}%`}</div>
     </div>
   );
 };

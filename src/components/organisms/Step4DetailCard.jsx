@@ -12,7 +12,7 @@ const Step4DetailCard = () => {
                 }
                 divider
             >
-                <div className='flex flex-col before:!p-0 gap-8'>
+                <div className='flex flex-col  gap-8'>
 
                     <p className="text-[14px] font-normal text-white leading-[22px]">
                         Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy,
@@ -20,7 +20,8 @@ const Step4DetailCard = () => {
                         các từ ngẫu nhiên có khi không có vẻ gì là có ý nghĩa.
                         Nếu bạn định sử dụng một đoạn Lorem Ipsum.
                     </p>
-                    <div className='flex gap-3 before:!p-0 justify-center flex-wrap'>
+                    <div className='flex justify-center'>
+                    <div className='flex gap-3  flex-wrap w-[1096px]'>
                         <ContentCard className={"bg-lavenderBlush"} title={'1 Mạnh mẽ - Độc lập - Tự tin'} >
                             <PercentageCircularProgress value={20} />
 
@@ -77,6 +78,7 @@ const Step4DetailCard = () => {
 
                         </ContentCard>
                     </div>
+                </div>
                 </div>
             </DetailCard>
         </>
