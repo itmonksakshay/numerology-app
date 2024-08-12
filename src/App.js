@@ -14,6 +14,8 @@ import CardWrapper from "./components/atoms/CardWrapper";
 import PreviewDataChart from "./components/organisms/PreviewDataChart";
 import Step3DetailCard from "./components/organisms/Step3DetailCard";
 import Step4DetailCard from "./components/organisms/Step4DetailCard";
+import Step22DetailCard from "./components/organisms/Step22DetailCard";
+import Step23DetailCard from "./components/organisms/Step23DetailCard";
 
 const TextWrapper = styled("div")({
   "& .title": {
@@ -479,51 +481,13 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"22. Chỉ số sinh mệnh của bạn là: 4"}>
-          <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
-              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
-              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
-              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
-              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
-              là nó khiến văn bản giống thật hơn, bình thường hơn.
-            </p>
-            <div className="w-[295px]">
-              <SmallPrimaryButton>
-                Chỉ tài khoản Vip mới xem được mục này
-              </SmallPrimaryButton>
-            </div>
-          </div>
-        </DetailCard>
+              <Step22DetailCard/>
       </div>
       <div className="pt-5">
-        <DetailCard title={"23. Chỉ số thử thách sứ mệnh của bạn: 4"}>
-          <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
-              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
-              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
-              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
-              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
-              là nó khiến văn bản giống thật hơn, bình thường hơn.
-            </p>
-            <div className="flex flex-col gap-4">
-              <p className="text-[15px] font-normal text-white leading-[24px]">
-                Mục này cho biết bạn nên đi theo hướng nào trong những năm sắp
-                tới để đạt thành công.
-              </p>
-              <div className="w-[295px]">
-                <SmallPrimaryButton>
-                  Chỉ tài khoản Vip mới xem được mục này
-                </SmallPrimaryButton>
-              </div>
-            </div>
-          </div>
-        </DetailCard>
+              <Step23DetailCard/>
       </div>
       <div className="pt-5">
-        <DetailCard title={"24. Biểu đồ tên và biểu đồ tổng hợp"}>
+        <DetailCard title={"24. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp

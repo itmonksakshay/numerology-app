@@ -23,7 +23,7 @@ module.exports = {
         languidLavender: "#FD8813",
         languid: "#FFBB0C",
         yellowGreen: "#82C938",
-
+        ereieBlack:"#1F1F1F"
       },
       backgroundImage: {
         'gradient-0': 'linear-gradient(0deg, #120D2E 0%, #1A133E 100%)'
