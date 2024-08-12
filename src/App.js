@@ -11,9 +11,9 @@ import PrimaryButton, {
   SmallPrimaryButton,
 } from "./components/atoms/Button/PrimaryButton";
 import CardWrapper from "./components/atoms/CardWrapper";
-import DataChart from "./components/molecules/DataChart";
 import PreviewDataChart from "./components/organisms/PreviewDataChart";
 import Step3DetailCard from "./components/organisms/Step3DetailCard";
+import Step4DetailCard from "./components/organisms/Step4DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
 import Step23DetailCard from "./components/organisms/Step23DetailCard";
 
@@ -108,7 +108,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"2. Trọng số năng lượng"}>
+        <DetailCard title={"2. Trọng số năng lượng"} divider>
           <TableCard />
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
@@ -135,26 +135,30 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"3. Chu kỳ 9 năm cá nhân"}>
+        <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
           <Step3DetailCard />
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={
-            "4. Nhóm tính cách theo bản ngã của bạn (có thể thay đổi do luyện tập)"
-          }
-        ></DetailCard>
+       <Step4DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard
           title={
             "5. Chỉ số đường đời (số chủ đạo) của bạn là: 5 Năng động - Linh hoạt"
           }
-        ></DetailCard>
+          divider
+        >
+          <p className="text-[14px] font-normal text-white leading-[22px]" >
+            Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy, nhưng
+            đa số được biến đổi bằng cách thêm các yếu tố hài hước, các từ ngẫu
+            nhiên có khi không có vẻ gì là có ý nghĩa. Nếu bạn định sử dụng một
+            đoạn Lorem Ipsum.
+          </p>
+        </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"6. Chu kỳ đường đời"}>
+        <DetailCard title={"6. Chu kỳ đường đời"} divider>
           <p className="text-[15px] font-normal text-white leading-[24px]">
             <span className="font-bold">Chu kì đỉnh cuộc đời </span>được đại
             diện và kết hợp bởi rung động năng lượng riêng của từng thần số từ 1
@@ -173,7 +177,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"7. Các chỉ số năm"}>
+        <DetailCard title={"7. Kim tự tháp thần số học"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -198,7 +202,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"8. Các chỉ số tháng"}>
+        <DetailCard title={"8. Các chỉ số năm"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -223,7 +227,27 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"9. Chỉ số sinh mệnh của bạn là:"} subtitle={"4"}>
+        <DetailCard title={"9. Các chỉ số tháng"}>
+          <div className="flex flex-col gap-8">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
+              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
+              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
+              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
+              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
+              là nó khiến văn bản giống thật hơn, bình thường hơn.
+            </p>
+            <div></div>
+            <div className="w-[295px]">
+              <SmallPrimaryButton>
+                Chỉ tài khoản Vip mới xem được mục này
+              </SmallPrimaryButton>
+            </div>
+          </div>
+        </DetailCard>
+      </div>
+      <div className="pt-5">
+        <DetailCard title={"10. Chỉ số sinh mệnh của bạn là:"} subtitle={"4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -242,7 +266,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"10. Tương quan đường đời - Sứ mệnh"}>
+        <DetailCard title={"11. Tương quan đường đời - Sứ mệnh"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -262,7 +286,7 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard
-          title={"11. Chỉ số thử thách sứ mệnh của bạn: "}
+          title={"12. Chỉ số thử thách sứ mệnh của bạn:"}
           subtitle={"1"}
         >
           <div className="flex flex-col gap-8">
@@ -284,7 +308,7 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard
-          title={"12. Chỉ số trưởng thành của bạn là:"}
+          title={"13. Chỉ số năng lực trưởng thành của bạn là:"}
           subtitle={"5"}
         >
           <div className="flex flex-col gap-8">
@@ -305,10 +329,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={"13. Chỉ số năng lực trưởng thành của bạn là:"}
-          subtitle={"4"}
-        >
+        <DetailCard title={"14. Chỉ số linh hồn của bạn là:"} subtitle={"4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -327,26 +348,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"14. Chỉ số linh hồn của bạn là:"} subtitle={"6"}>
-          <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
-              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
-              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
-              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
-              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
-              là nó khiến văn bản giống thật hơn, bình thường hơn.
-            </p>
-            <div className="w-[295px]">
-              <SmallPrimaryButton>
-                Chỉ tài khoản Vip mới xem được mục này
-              </SmallPrimaryButton>
-            </div>
-          </div>
-        </DetailCard>
-      </div>
-      <div className="pt-5">
-        <DetailCard title={"15. Chỉ số sinh mệnh của bạn là: 4"}>
+        <DetailCard title={"15. Chỉ số sinh mệnh của bạn là:"} subtitle={"6"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -460,7 +462,23 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"21. Chỉ số sinh mệnh của bạn là: 4"}></DetailCard>
+        <DetailCard title={"21. Chỉ số sinh mệnh của bạn là: 4"}>
+          <div className="flex flex-col gap-8">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
+              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
+              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
+              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
+              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
+              là nó khiến văn bản giống thật hơn, bình thường hơn.
+            </p>
+            <div className="w-[295px]">
+              <SmallPrimaryButton>
+                Chỉ tài khoản Vip mới xem được mục này
+              </SmallPrimaryButton>
+            </div>
+          </div>
+        </DetailCard>
       </div>
       <div className="pt-5">
               <Step22DetailCard/>
@@ -488,10 +506,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={"25. Chỉ số sinh mệnh của bạn là: 4"}
-          subtitle={"46"}
-        >
+        <DetailCard title={"25. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -510,10 +525,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={"26. Chỉ số sinh mệnh của bạn là: 4"}
-          subtitle={"46"}
-        >
+        <DetailCard title={"26. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -532,10 +544,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={"27. TChỉ số sinh mệnh của bạn là: 4"}
-          subtitle={"46"}
-        >
+        <DetailCard title={"27. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -554,10 +563,7 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={"28. Chỉ số sinh mệnh của bạn là: 4"}
-          subtitle={"46"}
-        >
+        <DetailCard title={"28. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
@@ -576,10 +582,26 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={"29. Chỉ số sinh mệnh của bạn là: 4"}
-          subtitle={"46"}
-        >
+        <DetailCard title={"29. Chỉ số sinh mệnh của bạn là: 4"}>
+          <div className="flex flex-col gap-8">
+            <p className="text-[15px] font-normal text-white leading-[24px]">
+              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
+              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
+              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
+              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
+              là nó khiến văn bản giống thật hơn, bình thường hơn.
+            </p>
+            <div className="w-[295px]">
+              <SmallPrimaryButton>
+                Chỉ tài khoản Vip mới xem được mục này
+              </SmallPrimaryButton>
+            </div>
+          </div>
+        </DetailCard>
+      </div>
+      <div className="pt-5">
+        <DetailCard title={"30. Chỉ số sinh mệnh của bạn là: 4"}>
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp

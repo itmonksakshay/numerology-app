@@ -13,7 +13,16 @@ module.exports = {
         blueBlack: "#1A133E",
         orangePeel: "#F7A120",
         orangeCrayola: "#FB6514",
-        aliceBlue:"#DFE8F7",
+        lavenderBlush: "#F2E2E2",
+        Linen: "#F2E7DE",
+        eggShell: "#F1EEDE",
+        pastelMint: "#DBEACD",
+        aeroBlue: "#C4E1C7",
+        LightCyan: "#D2EFED",
+        aliceBlue:  "#DDE7F2",
+        languidLavender: "#FD8813",
+        languid: "#FFBB0C",
+        yellowGreen: "#82C938",
         ereieBlack:"#1F1F1F"
       },
       backgroundImage: {
