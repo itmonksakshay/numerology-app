@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
         <img src={backgroundImage2} className="w-full mt-[-5px]" />
         <img src={backgroundImage3} className="w-full mt-[-5px]" />
         <img src={backgroundImage1} className="w-full mt-[-5px]" />
+        <img src={backgroundImage2} className="w-full mt-[-5px]" />
         <Footer />
       </div>
       <div className="w-full absolute z-1 px-[120px] pb-[84px] pt-[164px]" autoFocus>{children}</div>
