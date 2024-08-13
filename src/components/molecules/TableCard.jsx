@@ -20,17 +20,6 @@ const TableCard = ({ items }) => {
                     ))}                    
                 </div>
                 
-                {/* <div className=' font-bold text-[23px]  py-2 w-[25%]  bg-white border-2 border-darkGray' style={{ backgroundColor: `${item.bgcolor}` }}>{item.title}</div>
-                <div className='  py-2 w-[20%] bg-white border-2 border-darkGray' style={{ backgroundColor: `${item.bgcolor}` }}>{item.column1.number}{item.column1.power && <sup className='relative top-[-12px] text-[16px] '>{item.column1.power}</sup>}</div>
-                <div className='  py-2 w-[20%] bg-white border-2 border-darkGray' style={{ backgroundColor: `${item.bgcolor}` }}>{item.column2.number}{item.column2.power && <sup className='relative top-[-12px] text-[16px] '>{item.column2.power}</sup>}</div>
-                <div className=' py-2 w-[20%] bg-white border-2 border-darkGray' style={{ backgroundColor: `${item.bgcolor}` }}>{item.column3.number}{item.column3.power && <sup className='relative top-[-12px] text-[16px] '>{item.column3.power}</sup>}</div>
-                <div className=' py-2 flex  w-[35%] bg-white justify-center border-2 border-darkGray' style={{ backgroundColor: `${item.bgcolor}` }}>
-                    {item.column4.values.map((value, index) => (
-                        <div key={index}>
-                            <div className='mx-[2px] rounded-md text-[26px] px-2 py-[1px]' style={{ backgroundColor: `${item.column4.bgcolor}` }}>{value.number}{value.power && <sup className='relative top-[-12px] text-[16px] '>{value.power}</sup>}</div>
-                        </div>
-                    ))}
-                </div> */}
             </div>
         ))}
     </div>
