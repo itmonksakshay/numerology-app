@@ -3,8 +3,6 @@ import Layout from "./components/layout";
 import InfoCard from "./components/molecules/InfoCard";
 import infoCardPattern from "./assets/images/infoCardPattern.png";
 import DetailCard from "./components/molecules/DetailCard";
-import TableCard from "./components/molecules/TableCard";
-
 import { styled } from "@mui/material";
 import PrimaryButton, {
   BigPrimaryButton,
@@ -12,6 +10,7 @@ import PrimaryButton, {
 } from "./components/atoms/Button/PrimaryButton";
 import CardWrapper from "./components/atoms/CardWrapper";
 import PreviewDataChart from "./components/organisms/PreviewDataChart";
+import Step2DetailCard from "./components/organisms/Step2DetailCard";
 import Step3DetailCard from "./components/organisms/Step3DetailCard";
 import Step4DetailCard from "./components/organisms/Step4DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
@@ -133,6 +132,8 @@ function App() {
             </p>
           </div>
         </DetailCard>
+        {/* TableCard */}
+        <Step2DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
