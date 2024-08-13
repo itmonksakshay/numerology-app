@@ -3,17 +3,18 @@ import Layout from "./components/layout";
 import InfoCard from "./components/molecules/InfoCard";
 import infoCardPattern from "./assets/images/infoCardPattern.png";
 import DetailCard from "./components/molecules/DetailCard";
-import TableCard from "./components/molecules/TableCard";
-
-import {  styled } from "@mui/material";
+import { styled } from "@mui/material";
 import PrimaryButton, {
   BigPrimaryButton,
   SmallPrimaryButton,
 } from "./components/atoms/Button/PrimaryButton";
 import CardWrapper from "./components/atoms/CardWrapper";
 import PreviewDataChart from "./components/organisms/PreviewDataChart";
+import Step2DetailCard from "./components/organisms/Step2DetailCard";
 import Step3DetailCard from "./components/organisms/Step3DetailCard";
 import Step4DetailCard from "./components/organisms/Step4DetailCard";
+import Step8DetailCard from "./components/organisms/Step8DetailCard";
+import Step9DetailCard from "./components/organisms/Step9DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
 import Step23DetailCard from "./components/organisms/Step23DetailCard";
 import Title3DetailCard from "./components/organisms/Title3DetailCard";
@@ -111,7 +112,6 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard title={"2. Trọng số năng lượng"} divider>
-          <TableCard />
           <div className="flex flex-col gap-8">
             <p className="text-[15px] font-normal text-white leading-[24px]">
               <span className="font-bold">Trọng số năng lượng </span>trái với
@@ -135,6 +135,8 @@ function App() {
             </p>
           </div>
         </DetailCard>
+        {/* TableCard */}
+        <Step2DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
@@ -193,49 +195,12 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"8. Các chỉ số năm"}>
-          <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
-              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
-              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
-              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
-              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
-              là nó khiến văn bản giống thật hơn, bình thường hơn.
-            </p>
-            <div className="flex flex-col gap-4">
-              <p className="text-[15px] font-normal text-orangeCrayola leading-[24px]">
-                Mục này cho biết bạn nên đi theo hướng nào trong những năm sắp
-                tới để đạt thành công.
-              </p>
-              <div className="w-[295px]">
-                <SmallPrimaryButton>
-                  Chỉ tài khoản Vip mới xem được mục này
-                </SmallPrimaryButton>
-              </div>
-            </div>
-          </div>
-        </DetailCard>
+        {/* step-8 */}
+        <Step8DetailCard/>
       </div>
       <div className="pt-5">
-        <DetailCard title={"9. Các chỉ số tháng"}>
-          <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              Kim tự tháp cho thấy 4 đoạn trong chu kỳ cuộc đời và những kết hợp
-              đa dạng của nó. Chúng ta vẫn biết rằng, làm việc với một đoạn văn
-              bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung
-              vào yếu tố trình bày văn bản. Lorem Ipsum có ưu điểm hơn so với
-              đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội dung, nội dung"
-              là nó khiến văn bản giống thật hơn, bình thường hơn.
-            </p>
-            <div></div>
-            <div className="w-[295px]">
-              <SmallPrimaryButton>
-                Chỉ tài khoản Vip mới xem được mục này
-              </SmallPrimaryButton>
-            </div>
-          </div>
-        </DetailCard>
+        {/* step-9 */}
+        <Step9DetailCard/>
       </div>
       <div className="pt-5">
         <DetailCard title={"10. Chỉ số sinh mệnh của bạn là:"} subtitle={"4"}>
