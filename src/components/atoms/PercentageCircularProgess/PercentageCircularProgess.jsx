@@ -26,6 +26,7 @@ const PercentageCircularProgress = ({ value }) => {
           '.MuiCircularProgress-circle': {
             fill: '#FFFFFF'
           },
+          
         }}
         style={{ color: color,
           width: "96px",
