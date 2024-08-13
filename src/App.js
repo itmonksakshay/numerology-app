@@ -5,7 +5,7 @@ import infoCardPattern from "./assets/images/infoCardPattern.png";
 import DetailCard from "./components/molecules/DetailCard";
 import TableCard from "./components/molecules/TableCard";
 
-import { styled } from "@mui/material";
+import {  styled } from "@mui/material";
 import PrimaryButton, {
   BigPrimaryButton,
   SmallPrimaryButton,
@@ -16,6 +16,8 @@ import Step3DetailCard from "./components/organisms/Step3DetailCard";
 import Step4DetailCard from "./components/organisms/Step4DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
 import Step23DetailCard from "./components/organisms/Step23DetailCard";
+import Title3DetailCard from "./components/organisms/Title3DetailCard";
+import Step5DetailCard from "./components/organisms/Step5DetailCard";
 
 const TextWrapper = styled("div")({
   "& .title": {
@@ -80,7 +82,7 @@ function App() {
         <InfoCard
           title={"Tính cách nổi trội của bạn"}
           className="h-[226px]"
-        ></InfoCard>
+></InfoCard>
       </div>
       <div className="pt-5">
         <DetailCard title={"1. Chu kì đỉnh cuộc đời"} divider>
@@ -136,26 +138,15 @@ function App() {
       </div>
       <div className="pt-5">
         <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
-          <Step3DetailCard />
+          <Step3DetailCard /> 
+          <Title3DetailCard />
         </DetailCard>
       </div>
       <div className="pt-5">
        <Step4DetailCard />
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={
-            "5. Chỉ số đường đời (số chủ đạo) của bạn là: 5 Năng động - Linh hoạt"
-          }
-          divider
-        >
-          <p className="text-[14px] font-normal text-white leading-[22px]" >
-            Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy, nhưng
-            đa số được biến đổi bằng cách thêm các yếu tố hài hước, các từ ngẫu
-            nhiên có khi không có vẻ gì là có ý nghĩa. Nếu bạn định sử dụng một
-            đoạn Lorem Ipsum.
-          </p>
-        </DetailCard>
+      <Step5DetailCard/>
       </div>
       <div className="pt-5">
         <DetailCard title={"6. Chu kỳ đường đời"} divider>

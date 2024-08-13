@@ -21,11 +21,11 @@ const PercentageCircularProgress = ({ value }) => {
         variant="determinate"
         value={value}
         size={90}
-        thickness={4}
+        thickness={2}
         sx={{
           '.MuiCircularProgress-circle': {
             fill: '#FFFFFF'
-          }
+          },
         }}
         style={{ color: color,
           width: "96px",

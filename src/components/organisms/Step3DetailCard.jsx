@@ -3,7 +3,8 @@ import TitleCard from "../molecules/TitleCard";
 import StandarButton from "../atoms/Button/StandardButton";
 import DataChart from "../molecules/DataChart";
 
-const Step3DetailCard = () => {
+
+const Step3DetailCard = ( divider) => {
   const titleInfo = [
     {
       id: 1,
@@ -78,11 +79,11 @@ const Step3DetailCard = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="w-[1096px] flex flex-wrap gap-3">
-          {titleInfo.map((item) => (
+       {divider && <div className="w-[1096px] flex flex-wrap gap-3">
+         {titleInfo.map((item) => (
             <TitleCard item={item} />
           ))}
-        </div>
+        </div> }   
       </div>
     </div>
   );
