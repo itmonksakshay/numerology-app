@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Title3DetailCard = ({ title, children, src, className }) => {
+const Title3Card = ({ title, children, src, className }) => {
 
 
   return (
@@ -21,5 +21,5 @@ const Title3DetailCard = ({ title, children, src, className }) => {
   );
 };
 
-export default Title3DetailCard;
+export default Title3Card;
 
