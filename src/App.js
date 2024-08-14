@@ -17,7 +17,6 @@ import Step8DetailCard from "./components/organisms/Step8DetailCard";
 import Step9DetailCard from "./components/organisms/Step9DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
 import Step23DetailCard from "./components/organisms/Step23DetailCard";
-import Title3DetailCard from "./components/organisms/Title3DetailCard";
 import Step5DetailCard from "./components/organisms/Step5DetailCard";
 
 const TextWrapper = styled("div")({
