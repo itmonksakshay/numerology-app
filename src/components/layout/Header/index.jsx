@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import AppIcon from "../../../assets/images/appIcon.png"
 import PrimaryButton from '../../atoms/Button/PrimaryButton';
 import SecondaryButton from '../../atoms/Button/SecondaryButton';
@@ -10,9 +11,15 @@ const Header = () => {
       </div>
       <div className='flex items-center gap-[30px]'>
         <ul className='flex gap-[32px] text-white font-medium text-[15px]  leading-[18.15px]'>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Contact</a></li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
         <div className='flex gap-3.5'>
           <PrimaryButton>Sign Up</PrimaryButton>

@@ -3,7 +3,7 @@ import React from 'react'
 const TableCard = ({ items }) => {
     return <div className='w-full h-full rounded-[10px] border-[3px] text-[31.29px]  font-semibold'>
         {items.map((item, index) => (
-            <div className=' w-full text-[30px] h-[76px] border-t flex first:border-0 first:rounded-t-[10px] last:rounded-b-[10px] '>
+            <div key={index} className='w-full text-[30px] h-[76px] border-t flex first:border-0 first:rounded-t-[10px] last:rounded-b-[10px] '>
                 <div style={{ backgroundColor: `${item.bgcolor}` }} className='text-[24px]  border-r    flex  grow shrink-0 basis-[22%] justify-center items-center last:border-0'>{item.title}</div>
                 <div style={{ backgroundColor: `${item.bgcolor}` }} className='border-r    flex grow shrink-0 basis-[17%]  justify-center items-center last:border-0'>{item.column1.number}{item.column1.power && <sup className='relative top-[-6px] text-[16px] '>{item.column1.power}</sup>}</div>
 
