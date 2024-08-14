@@ -9,8 +9,8 @@ import backgroundImage3 from "../../assets/images/backgrounImage3.png";
 const Layout = () => {
   return (
     <div className="w-full relative">
-       <div className="absolute w-full z-0">
         <Header />
+       <div className="absolute w-full z-0">
           <img src={backgroundImage1} className="w-full mt-[-5px]" alt="" />
           <img src={backgroundImage2} className="w-full mt-[-5px]" alt=""  />
           <img src={backgroundImage3} className="w-full mt-[-5px]" alt=""  />
