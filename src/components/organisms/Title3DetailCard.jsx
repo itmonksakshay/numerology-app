@@ -4,7 +4,7 @@ import React from 'react'
 import SunIcon from '../../assets/icons/sunIcon.svg';
 import Title3Card from '../molecules/Title3Card';
 import MoonIcon from '../../assets/icons/moonIcon.svg';
-import DetailCard from '../molecules/DetailCard';
+;
 
 const Title3DetailCard = () => {
   return (

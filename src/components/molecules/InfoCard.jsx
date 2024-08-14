@@ -24,7 +24,7 @@ const InfoCardWrapper = styled("div")({
   },
 });
 
-const InfoCard = ({ children, title, ...extraProps }) => {
+const InfoCard = ({ children, title,  ...extraProps }) => {
   return (
     <CardWrapper {...extraProps}>
       <InfoCardWrapper className="rounded-xl">
@@ -36,7 +36,7 @@ const InfoCard = ({ children, title, ...extraProps }) => {
           <img src={threeStarIcon} />
           <div className="end-bar"></div>
         </div>
-        <div className="py-8">{children}</div>
+<div className="py-8">{children}</div>
       </InfoCardWrapper>
     </CardWrapper>
   );
