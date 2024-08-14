@@ -1,6 +1,6 @@
 
 import InfoCard from "../../components/molecules/InfoCard";
-import { Link } from "react-router-dom";
+
 import infoCardPattern from "../../assets/images/infoCardPattern.png";
 import DetailCard from "../../components/molecules/DetailCard";
 import { styled } from "@mui/material";
@@ -47,9 +47,6 @@ function NumerologyDetail() {
   return (
   <>
       <div className="flex gap-[24px]">
-      <li>
-            <Link to="/about">About</Link>
-          </li>
         <InfoCard title={"Thông tin"} className="min-w-[248px]">
           <div className="px-[25px] py-3">
             <div className="w-[198px] h-[195px] flex flex-col items-center justify-between">

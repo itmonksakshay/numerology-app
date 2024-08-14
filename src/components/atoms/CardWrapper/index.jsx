@@ -10,7 +10,6 @@ const CardWrapper = styled("div")({
   padding: "10px",
   border: "1px solid rgba(255, 255, 255, 0.5)",
   borderRadius: "15px",
-  display: "inline-block",
   backdropFilter: "blur(25px)",
 });
 

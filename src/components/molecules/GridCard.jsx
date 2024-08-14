@@ -25,16 +25,14 @@ const GridCardWrapper = styled("div")({
 const GridCard = ({ children, title, arrowValue, ...extraProps }) => {
     return (
         <div style={{ marginBottom: "-28px" }}>
-            <CardWrapper {...extraProps} className="mx-2">
-                <GridCardWrapper className="rounded-xl text-center py-3">
-                    <div className="flex flex-col justify-center items-center">
-                        <div className="flex justify-center items-center gap-4 mx-4">
-                            <div className="title">{title}</div>
-                        </div>
-                        <div className="content">{children}</div>
+            <GridCardWrapper className="rounded-xl text-center py-3 mx-2">
+                <div className="flex flex-col justify-center items-center">
+                    <div className="flex justify-center items-center gap-4 mx-4">
+                        <div className="title">{title}</div>
                     </div>
-                </GridCardWrapper>
-            </CardWrapper>
+                    <div className="content">{children}</div>
+                </div>
+            </GridCardWrapper>
             <div className='flex flex-col justify-center items-center text-white mt-5'>
                 <div className="arrow-value">{arrowValue}</div>
                 <img src={ArrowUp} alt="threeStarIcon" />
