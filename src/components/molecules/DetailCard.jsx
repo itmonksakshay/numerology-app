@@ -19,6 +19,7 @@ const DetailCardWrapper = styled("div")({
 const DetailCard = ({ children, title,subtitle,divider, ...extraProps }) => {
   return (
     <CardWrapper {...extraProps}>
+      <div className="content">
       <DetailCardWrapper className="rounded-xl px-[48px] py-[40px]">
         <div className="flex gap-2 items-end">
           <img src={starIcon} className="h-7 w-7" />
@@ -28,6 +29,8 @@ const DetailCard = ({ children, title,subtitle,divider, ...extraProps }) => {
         {divider && <div className="start-bar mt-2"></div>}
         <div className="pt-4">{children}</div>
       </DetailCardWrapper>
+
+      </div>
     </CardWrapper>
   );
 };

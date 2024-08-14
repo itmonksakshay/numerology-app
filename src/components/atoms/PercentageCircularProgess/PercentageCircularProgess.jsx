@@ -16,7 +16,7 @@ const PercentageCircularProgress = ({ value }) => {
   const color = getColor(value);
 
   return (
-    <div className="flex relative justify-center items-center rounded-full before:!p-0 ">
+    <div className="flex relative justify-center items-center rounded-full   ">
       <CircularProgress
         variant="determinate"
         value={value}
@@ -34,7 +34,7 @@ const PercentageCircularProgress = ({ value }) => {
          }}
 
       />
-      <div className="absolute before:!p-0 text-[24px] leading-[29.05px] font-semibold">{`${Math.round(value)}%`}</div>
+      <div className="absolute   text-[24px] leading-[29.05px] font-semibold">{`${Math.round(value)}%`}</div>
     </div>
   );
 };

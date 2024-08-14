@@ -27,17 +27,19 @@ const InfoCardWrapper = styled("div")({
 const InfoCard = ({ children, title, ...extraProps }) => {
   return (
     <CardWrapper {...extraProps}>
-      <InfoCardWrapper className="rounded-xl">
-        <div className="h-[72px] flex items-center justify-center  card-title text-white	">
-          {title}
-        </div>
-        <div className="flex justify-center items-center gap-4 mx-4">
-          <div className="start-bar"></div>
-          <img src={threeStarIcon} alt="threeStarIcon" />
-          <div className="end-bar"></div>
-        </div>
-        <div className="py-8">{children}</div>
-      </InfoCardWrapper>
+      <div className="content">
+        <InfoCardWrapper className="rounded-xl">
+          <div className="h-[72px] flex items-center justify-center  card-title text-white	">
+            {title}
+          </div>
+          <div className="flex justify-center items-center gap-4 mx-4">
+            <div className="start-bar"></div>
+            <img src={threeStarIcon} alt="threeStarIcon" />
+            <div className="end-bar"></div>
+          </div>
+          <div className="py-8">{children}</div>
+        </InfoCardWrapper>
+      </div>
     </CardWrapper>
   );
 };

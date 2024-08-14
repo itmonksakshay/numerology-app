@@ -297,12 +297,12 @@ export default function DataChart({
   }, [data, boxWidth]);
 
   return (
-    <div className="w-full relative before:!p-0" ref={containerRef}>
+    <div className="w-full relative  " ref={containerRef}>
       <svg ref={svgRef}></svg>
       {markerPositions.map((pos, index) => (
         <div
           key={index}
-          className={'absolute translate-y-1/2 before:!p-0 h-[32px] translate-x-[-10%] bg-orangeCrayola rounded text-white text-[13px] font-semibold flex items-center px-[14px]'}
+          className={'absolute translate-y-1/2   h-[32px] translate-x-[-10%] bg-orangeCrayola rounded text-white text-[13px] font-semibold flex items-center px-[14px]'}
           style={{
             left: pos.x + 'px',
             top: pos.y + 'px',
@@ -314,7 +314,7 @@ export default function DataChart({
       {circlePositions.map((pos, index) => (
         <div
           key={index}
-          className={'absolute translate-x-[30%] w-[38px] h-[38px] bg-aliceBlue translate-y-[130%] before:!p-0 h-[32px] rounded-full text-ereieBlack text-[18px] font-semibold flex items-center px-[14px]'}
+          className={'absolute translate-x-[30%] w-[38px] h-[38px] bg-aliceBlue translate-y-[130%]   h-[32px] rounded-full text-ereieBlack text-[18px] font-semibold flex items-center px-[14px]'}
           style={{
             left: pos.x + 'px',
             top: pos.y + 'px',
