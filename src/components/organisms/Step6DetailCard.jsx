@@ -62,7 +62,7 @@ const Step6DetailCard = () => {
           <div className="flex justify-center items-center w-full   ">
             <div className="w-full h-[198px] flex justify-center  ">
               {data.map((item,idx) => (
-                <div className=" w-[297px] relative   rounded-none">
+                <div className=" w-[297px] relative">
                   <div style={{background:`url(${bgimage[idx+1]})`,zIndex:3-idx, marginLeft:!idx?'30px':idx==2?'-30px':0}} className="w-full h-[95.6px] flex justify-center items-center absolute  ">
                     <h2 className="text-[40px] text-white ">{item.rank}</h2>
                   </div>
