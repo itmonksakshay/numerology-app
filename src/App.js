@@ -5,7 +5,6 @@ import infoCardPattern from "./assets/images/infoCardPattern.png";
 import DetailCard from "./components/molecules/DetailCard";
 import { styled } from "@mui/material";
 import PrimaryButton, {
-  BigPrimaryButton,
   SmallPrimaryButton,
 } from "./components/atoms/Button/PrimaryButton";
 import CardWrapper from "./components/atoms/CardWrapper";
@@ -18,7 +17,7 @@ import Step9DetailCard from "./components/organisms/Step9DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
 import Step23DetailCard from "./components/organisms/Step23DetailCard";
 import Step5DetailCard from "./components/organisms/Step5DetailCard";
-import StepDetailCard from "./components/organisms/StepDetailCard";
+import InfoStepDetailCard from "./components/organisms/InfoStepDetailCard";
 import Step1DetailCard from "./components/organisms/Step1DetailCard";
 
 const TextWrapper = styled("div")({
@@ -81,23 +80,23 @@ function App() {
         </InfoCard>
       </div>
       <div className="pt-5 w-full">
-      <StepDetailCard/>
+        <InfoStepDetailCard />
       </div>
       <div className="pt-5">
-       <Step1DetailCard />
+        <Step1DetailCard />
       </div>
       <div className="pt-5">
         {/* TableCard */}
         <Step2DetailCard />
       </div>
       <div className="pt-5">
-          <Step3DetailCard /> 
+        <Step3DetailCard />
       </div>
       <div className="pt-5">
-       <Step4DetailCard />
+        <Step4DetailCard />
       </div>
       <div className="pt-5">
-      <Step5DetailCard/>
+        <Step5DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard title={"6. Chu kỳ đường đời"} divider>
@@ -145,11 +144,11 @@ function App() {
       </div>
       <div className="pt-5">
         {/* step-8 */}
-        <Step8DetailCard/>
+        <Step8DetailCard />
       </div>
       <div className="pt-5">
         {/* step-9 */}
-        <Step9DetailCard/>
+        <Step9DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard title={"10. Chỉ số sinh mệnh của bạn là:"} subtitle={"4"}>
@@ -386,10 +385,10 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-              <Step22DetailCard/>
+        <Step22DetailCard />
       </div>
       <div className="pt-5">
-              <Step23DetailCard/>
+        <Step23DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard title={"24. Chỉ số sinh mệnh của bạn là: 4"}>

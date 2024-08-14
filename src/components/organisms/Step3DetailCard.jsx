@@ -6,7 +6,7 @@ import DetailCard from "../molecules/DetailCard";
 import Title3DetailCard from "./Title3DetailCard";
 
 
-const Step3DetailCard = ( divider) => {
+const Step3DetailCard = (divider) => {
   const titleInfo = [
     {
       id: 1,
@@ -56,42 +56,42 @@ const Step3DetailCard = ( divider) => {
 
   return (
     <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
-       <div className="flex flex-col gap-8">
-      <div className="flex justify-center">
-        <div className="w-[740px]">
-          <DataChart data={data} boxHeight={364} defaultWidth={740} topAxisData={topAxisData} />
+      <div className="flex flex-col gap-8">
+        <div className="flex justify-center">
+          <div className="w-[740px]">
+            <DataChart data={data} boxHeight={364} defaultWidth={740} topAxisData={topAxisData} />
+          </div>
         </div>
-      </div>
-      <div className="flex justify-center">
-        <div className="w-[250px]">
-          <StandarButton>Chu kỳ vận số của bạn</StandarButton>
+        <div className="flex justify-center">
+          <div className="w-[250px]">
+            <StandarButton>Chu kỳ vận số của bạn</StandarButton>
+          </div>
         </div>
-      </div>
-      <div className="flex flex-col gap-6">
-        <p className="text-white text-[18px] leading-[22px] font-semibold">
-          Tính chất chu kỳ các năm cá nhân
-        </p>
-        <div>
-          <p className="text-white text-[15px] leading-[26px] font-normal">
-            Năm cá nhân biên thiên theo chu kỳ con sóng.
+        <div className="flex flex-col gap-6">
+          <p className="text-white text-[18px] leading-[22px] font-semibold">
+            Tính chất chu kỳ các năm cá nhân
           </p>
-          <p className="text-white text-[15px] leading-[26px] font-normal">
-            Nếu các năm đạt đỉnh có số của đỉnh trùng với số chủ đạo hoặc số có
-            trong số năng lượng lớn, thì sóng rung sẽ càng rõ rệt.
-          </p>
+          <div>
+            <p className="text-white text-[15px] leading-[26px] font-normal">
+              Năm cá nhân biên thiên theo chu kỳ con sóng.
+            </p>
+            <p className="text-white text-[15px] leading-[26px] font-normal">
+              Nếu các năm đạt đỉnh có số của đỉnh trùng với số chủ đạo hoặc số có
+              trong số năng lượng lớn, thì sóng rung sẽ càng rõ rệt.
+            </p>
+          </div>
         </div>
+        <div className="flex justify-center">
+          {divider && <div className="w-[1096px] flex flex-wrap gap-3">
+            {titleInfo.map((item) => (
+              <TitleCard item={item} />
+            ))}
+          </div>}
+        </div>
+        <Title3DetailCard />
       </div>
-      <div className="flex justify-center">
-       {divider && <div className="w-[1096px] flex flex-wrap gap-3">
-         {titleInfo.map((item) => (
-            <TitleCard item={item} />
-          ))}
-        </div> }   
-      </div>
-      <Title3DetailCard />
-    </div>
     </DetailCard>
-   
+
   );
 };
 
