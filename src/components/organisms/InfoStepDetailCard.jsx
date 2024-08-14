@@ -15,7 +15,7 @@ const InfoStepDetailCard = () => {
             tình và trung thành.
           </p>
         </div>
-        <divider className=" border border-solid border-darkgray" />
+        <div className=" border border-solid border-darkgray" />
         <div className="w-[536px] h-[72px]">
           <p className="text-[16px] font-normal text-[#ffffff] leading-[24px]">
             <span className="font-bold">Điểm yếu:</span> Bạn thường dễ làm việc theo cảm hứng, đôi

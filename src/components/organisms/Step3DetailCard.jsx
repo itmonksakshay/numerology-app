@@ -83,8 +83,8 @@ const Step3DetailCard = (divider) => {
         </div>
         <div className="flex justify-center">
           {divider && <div className="w-[1096px] flex flex-wrap gap-3">
-            {titleInfo.map((item) => (
-              <TitleCard item={item} />
+            {titleInfo.map((item, index) => (
+              <TitleCard key={index} item={item} />
             ))}
           </div>}
         </div>
