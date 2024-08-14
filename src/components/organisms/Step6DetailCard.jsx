@@ -63,21 +63,9 @@ const Step6DetailCard = () => {
             <div className="w-full h-[198px] flex justify-center  ">
               {data.map((item,idx) => (
                 <div className=" w-[297px] relative">
-                  <div style={{background:`url(${bgimage[idx+1]})`,zIndex:3-idx, marginLeft:!idx?'30px':idx==2?'-30px':0}} className="w-full h-[95.6px] flex justify-center items-center absolute  ">
+                  <div style={{background:`url(${bgimage[idx+1]})`,zIndex:3-idx, marginLeft:!idx?'30px':idx===2?'-30px':0}} className="w-full h-[95.6px] flex justify-center items-center absolute  ">
                     <h2 className="text-[40px] text-white ">{item.rank}</h2>
                   </div>
-                  {/* <div className="flex flex-col items-center justify-center text-[#FFFFFF]">
-                    <h2
-                      style={{ color: `${item.bgcolor}` }}
-                      className="text-[22px] font-bold"
-                    >
-                      {item.title}
-                    </h2>
-                    <h3 className="text-[18px]  font-semibold mb-1">
-                      {item.subTitle}
-                    </h3>
-                    <h4 className="text-[18px]  font-normal">{item.desc}</h4>
-                  </div> */}
                 </div>
               ))}
             </div>

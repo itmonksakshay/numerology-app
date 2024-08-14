@@ -13,15 +13,9 @@ const Title3DetailCard = () => {
         title={'Nắm bắt cơ hội năm Cá Nhân để nương theo con sóng'} >
         <ul className='list-disc text-[15px] font-normal  text-[#000000] leading-[26px]'>
           <li>Lựa chọn và chuẩn bị kế hoạch cho từng năm</li>
-          <li>
-            Phát triển đồng điều thân, tâm, trí trên cả chu kỳ linh hồn trưởng thành, phát triển
-          </li>
-          <li>
-            Thành công trong từng năm, các đỉnh thu được thành tự lớn
-          </li>
-          <li>
-            Hạn chế tổn thất, mất mát
-          </li>
+          <li>Phát triển đồng điều thân, tâm, trí trên cả chu kỳ linh hồn trưởng thành, phát triển</li>
+          <li>Thành công trong từng năm, các đỉnh thu được thành tự lớn</li>
+          <li>Hạn chế tổn thất, mất mát</li>
         </ul>
       </Title3Card>
       <Title3Card src={MoonIcon} className='bg-[#F9F2EE] flex items-start flex-col px-[15px] py-[15px] gap-2'
