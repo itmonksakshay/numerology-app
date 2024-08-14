@@ -17,6 +17,7 @@ import Step8DetailCard from "./components/organisms/Step8DetailCard";
 import Step9DetailCard from "./components/organisms/Step9DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
 import Step23DetailCard from "./components/organisms/Step23DetailCard";
+import Step5DetailCard from "./components/organisms/Step5DetailCard";
 
 const TextWrapper = styled("div")({
   "& .title": {
@@ -81,7 +82,7 @@ function App() {
         <InfoCard
           title={"Tính cách nổi trội của bạn"}
           className="h-[226px]"
-        ></InfoCard>
+></InfoCard>
       </div>
       <div className="pt-5">
         <DetailCard title={"1. Chu kì đỉnh cuộc đời"} divider>
@@ -109,55 +110,17 @@ function App() {
         </DetailCard>
       </div>
       <div className="pt-5">
-        <DetailCard title={"2. Trọng số năng lượng"} divider>
-          <div className="flex flex-col gap-8">
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              <span className="font-bold">Trọng số năng lượng </span>trái với
-              quan điểm chung của số đông, Lorem Ipsum không phải chỉ là một
-              đoạn văn bản ngẫu nhiên. Người ta tìm thấy nguồn gốc của nó từ
-              những tác phẩm văn học la-tinh cổ điển xuất hiện từ năm 45 trước
-              Công Nguyên, nghĩa là nó đã có khoảng hơn 2000 tuổi. Một giáo sư
-              của trường Hampden-Sydney College (bang Virginia - Mỹ) quan tâm
-              tới một trong những từ la-tinh khó hiểu nhất, "consectetur", trích
-              từ một đoạn của Lorem Ipsum, và đã nghiên cứu tất cả các ứng dụng
-              của từ này trong văn học cổ điển, để từ đó tìm ra nguồn gốc không
-              thể chối cãi của Lorem Ipsum.
-            </p>
-            <p className="text-[15px] font-normal text-white leading-[24px]">
-              Thật ra, nó được tìm thấy trong các đoạn 1.10.32 và 1.10.33 của
-              "De Finibus Bonorum et Malorum" (Đỉnh tối thượng của Cái Tốt và
-              Cái Xấu) viết bởi Cicero vào năm 45 trước Công Nguyên. Cuốn sách
-              này là một luận thuyết đạo lí rất phổ biến trong thời kì Phục
-              Hưng. Dòng đầu tiên của Lorem Ipsum, "Lorem ipsum dolor sit
-              amet..." được trích từ một câu trong đoạn thứ 1.10.32.
-            </p>
-          </div>
-        </DetailCard>
         {/* TableCard */}
         <Step2DetailCard />
       </div>
       <div className="pt-5">
-        <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
-          <Step3DetailCard />
-        </DetailCard>
+          <Step3DetailCard /> 
       </div>
       <div className="pt-5">
        <Step4DetailCard />
       </div>
       <div className="pt-5">
-        <DetailCard
-          title={
-            "5. Chỉ số đường đời (số chủ đạo) của bạn là: 5 Năng động - Linh hoạt"
-          }
-          divider
-        >
-          <p className="text-[14px] font-normal text-white leading-[22px]" >
-            Có rất nhiều biến thể của Lorem Ipsum mà bạn có thể tìm thấy, nhưng
-            đa số được biến đổi bằng cách thêm các yếu tố hài hước, các từ ngẫu
-            nhiên có khi không có vẻ gì là có ý nghĩa. Nếu bạn định sử dụng một
-            đoạn Lorem Ipsum.
-          </p>
-        </DetailCard>
+      <Step5DetailCard/>
       </div>
       <div className="pt-5">
         <DetailCard title={"6. Chu kỳ đường đời"} divider>

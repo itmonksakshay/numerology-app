@@ -2,8 +2,11 @@ import React from "react";
 import TitleCard from "../molecules/TitleCard";
 import StandarButton from "../atoms/Button/StandardButton";
 import DataChart from "../molecules/DataChart";
+import DetailCard from "../molecules/DetailCard";
+import Title3DetailCard from "./Title3DetailCard";
 
-const Step3DetailCard = () => {
+
+const Step3DetailCard = ( divider) => {
   const titleInfo = [
     {
       id: 1,
@@ -52,7 +55,8 @@ const Step3DetailCard = () => {
   const topAxisData = [41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51];
 
   return (
-    <div className="flex flex-col gap-8">
+    <DetailCard title={"3. Chu kỳ 9 năm cá nhân"} divider>
+       <div className="flex flex-col gap-8">
       <div className="flex justify-center">
         <div className="w-[740px]">
           <DataChart data={data} boxHeight={364} defaultWidth={740} topAxisData={topAxisData} />
@@ -78,13 +82,16 @@ const Step3DetailCard = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="w-[1096px] flex flex-wrap gap-3">
-          {titleInfo.map((item) => (
+       {divider && <div className="w-[1096px] flex flex-wrap gap-3">
+         {titleInfo.map((item) => (
             <TitleCard item={item} />
           ))}
-        </div>
+        </div> }   
       </div>
+      <Title3DetailCard />
     </div>
+    </DetailCard>
+   
   );
 };
 
