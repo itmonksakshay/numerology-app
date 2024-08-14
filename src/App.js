@@ -12,6 +12,7 @@ import PreviewDataChart from "./components/organisms/PreviewDataChart";
 import Step2DetailCard from "./components/organisms/Step2DetailCard";
 import Step3DetailCard from "./components/organisms/Step3DetailCard";
 import Step4DetailCard from "./components/organisms/Step4DetailCard";
+import Step6DetailCard from "./components/organisms/Step6DetailCard";
 import Step8DetailCard from "./components/organisms/Step8DetailCard";
 import Step9DetailCard from "./components/organisms/Step9DetailCard";
 import Step22DetailCard from "./components/organisms/Step22DetailCard";
@@ -19,6 +20,7 @@ import Step23DetailCard from "./components/organisms/Step23DetailCard";
 import Step5DetailCard from "./components/organisms/Step5DetailCard";
 import InfoStepDetailCard from "./components/organisms/InfoStepDetailCard";
 import Step1DetailCard from "./components/organisms/Step1DetailCard";
+
 
 const TextWrapper = styled("div")({
   "& .title": {
@@ -99,23 +101,8 @@ function App() {
         <Step5DetailCard />
       </div>
       <div className="pt-5">
-        <DetailCard title={"6. Chu kỳ đường đời"} divider>
-          <p className="text-[15px] font-normal text-white leading-[24px]">
-            <span className="font-bold">Chu kì đỉnh cuộc đời </span>được đại
-            diện và kết hợp bởi rung động năng lượng riêng của từng thần số từ 1
-            đến 9 và những kết hợp đa dạng của nó. Chúng ta vẫn biết rằng, làm
-            việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản
-            trở việc tập trung vào yếu tố trình bày văn bản. Lorem Ipsum có ưu
-            điểm hơn so với đoạn văn bản chỉ gồm nội dung kiểu "Nội dung, nội
-            dung, nội dung" là nó khiến văn bản giống thật hơn, bình thường hơn.
-            Nhiều phần mềm thiết kế giao diện web và dàn trang ngày nay đã sử
-            dụng Lorem Ipsum làm đoạn văn bản giả, và nếu bạn thử tìm các đoạn
-            "Lorem ipsum" trên mạng thì sẽ khám phá ra nhiều trang web hiện vẫn
-            đang trong quá trình xây dựng. Có nhiều phiên bản khác nhau đã xuất
-            hiện, đôi khi do vô tình, nhiều khi do cố ý (xen thêm vào những câu
-            hài hước hay thông tục).
-          </p>
-        </DetailCard>
+        {/* step-6 */}
+        <Step6DetailCard />
       </div>
       <div className="pt-5">
         <DetailCard title={"7. Kim tự tháp thần số học"}>

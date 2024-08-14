@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TableCard = ({ items }) => {
-    console.log(items)
     return <div className='w-full h-full rounded-[10px] border-[3px] text-[31.29px]  font-semibold'>
         {items.map((item, index) => (
             <div className=' w-full text-[30px] h-[76px] border-t flex first:border-0 first:rounded-t-[10px] last:rounded-b-[10px] '>
