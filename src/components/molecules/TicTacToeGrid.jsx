@@ -16,7 +16,7 @@ const TicTacToeGrid = ({data}) => {
   return (
       <div className='w-full'>
         {[0, 1, 2].map(index => (
-          <div className='flex border-t border-white/[0.3] first:border-0' item key={index}>
+          <div className='flex border-t border-white/[0.3] first:border-0' key={index}>
             {[0, 1, 2].map((subIndex,idx) => {
                  const dataKey = index*3+subIndex+1;
                  const columnData = data?.find((item)=> item.id == dataKey)
